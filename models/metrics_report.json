@@ -1,0 +1,136 @@
+{
+  "dataset_size": 1000,
+  "train_size": 800,
+  "test_size": 200,
+  "source_distribution": {
+    "synthetic_balanced": 730,
+    "zenodo_real": 270
+  },
+  "provenance_by_class": {
+    "SAFE": {
+      "zenodo_real": 175,
+      "synthetic_balanced": 25,
+      "total": 200
+    },
+    "SQL_INJECTION": {
+      "zenodo_real": 49,
+      "synthetic_balanced": 151,
+      "total": 200
+    },
+    "COMMAND_INJECTION": {
+      "zenodo_real": 23,
+      "synthetic_balanced": 177,
+      "total": 200
+    },
+    "INSECURE_DESERIALIZATION": {
+      "zenodo_real": 23,
+      "synthetic_balanced": 177,
+      "total": 200
+    },
+    "HARDCODED_SECRET": {
+      "zenodo_real": 0,
+      "synthetic_balanced": 200,
+      "total": 200
+    }
+  },
+  "class_distribution": {
+    "COMMAND_INJECTION": 200,
+    "INSECURE_DESERIALIZATION": 200,
+    "HARDCODED_SECRET": 200,
+    "SAFE": 200,
+    "SQL_INJECTION": 200
+  },
+  "cv_f1_macro_mean": 0.9377,
+  "cv_f1_macro_std": 0.0127,
+  "test_accuracy": 0.96,
+  "test_f1_macro": 0.9607,
+  "labels": [
+    "COMMAND_INJECTION",
+    "HARDCODED_SECRET",
+    "INSECURE_DESERIALIZATION",
+    "SAFE",
+    "SQL_INJECTION"
+  ],
+  "confusion_matrix": [
+    [
+      36,
+      0,
+      0,
+      4,
+      0
+    ],
+    [
+      0,
+      40,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      39,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      39,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      2,
+      38
+    ]
+  ],
+  "classification_report": {
+    "COMMAND_INJECTION": {
+      "precision": 1.0,
+      "recall": 0.9,
+      "f1-score": 0.9473684210526315,
+      "support": 40.0
+    },
+    "HARDCODED_SECRET": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 40.0
+    },
+    "INSECURE_DESERIALIZATION": {
+      "precision": 1.0,
+      "recall": 0.975,
+      "f1-score": 0.9873417721518988,
+      "support": 40.0
+    },
+    "SAFE": {
+      "precision": 0.8478260869565217,
+      "recall": 0.975,
+      "f1-score": 0.9069767441860465,
+      "support": 40.0
+    },
+    "SQL_INJECTION": {
+      "precision": 0.9743589743589743,
+      "recall": 0.95,
+      "f1-score": 0.9620253164556962,
+      "support": 40.0
+    },
+    "accuracy": 0.96,
+    "macro avg": {
+      "precision": 0.9644370122630992,
+      "recall": 0.96,
+      "f1-score": 0.9607424507692546,
+      "support": 200.0
+    },
+    "weighted avg": {
+      "precision": 0.9644370122630993,
+      "recall": 0.96,
+      "f1-score": 0.9607424507692547,
+      "support": 200.0
+    }
+  }
+}

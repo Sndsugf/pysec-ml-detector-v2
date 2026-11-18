@@ -1,0 +1,6 @@
+#!/goinfre/selmoulo/pysec-ml-detector-v2/.venv/bin/python
+import sys
+from bandit.cli.baseline import main
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(main())
